@@ -1,3 +1,3 @@
-# leviexpress-starter
+# LeviExpress
 
-A skeleton of the LeviExpress frontend
+Základ cvičného projektu LeviExpress

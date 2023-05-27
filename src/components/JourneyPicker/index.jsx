@@ -49,7 +49,7 @@ export const JourneyPicker = ({ onJourneyChange }) => (
           </button>
         </div>
       </form>
-      <img className="journey-picker__map" src={mapImage} />
+      <img className="journey-picker__map" src="/map.svg" />
     </div>
   </div>
 );
