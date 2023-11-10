@@ -1,8 +1,16 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import { App } from './components/App';
-import './style.css';
+import './global.css';
 
-export const API_BASE_URL = 'https://apps.kodim.cz/daweb/leviexpress/api';
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+  },
+]);
 
-createRoot(document.querySelector('#app')).render(<App />, );
+createRoot(document.querySelector('#app')).render(
+  <RouterProvider router={router} />
+);
